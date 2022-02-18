@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap");
+
+:root {
+  font-size: 10px;
+}
+body {
+  background-color: #171717;
+}
+* {
+  font-family: "Space Grotesk", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  width: 144rem;
+  color: #fff;
+  padding: 3rem;
+  margin: auto;
+}
+
+.btn {
+  background: #26262b;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  font-weight: 400;
+  border-radius: 2rem;
+  border: none;
+  color: white;
+}
+.btn-emoji {
+  font-weight: 500;
+  border-radius: 3rem;
+  display: flex;
+  column-gap: 1.3rem;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h5 {
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 7.2rem;
+  line-height: 9.2rem;
+}
+h2 {
+  font-size: 5.5rem;
+  line-height: 7rem;
+}
+h3 {
+  font-size: 4rem;
+  line-height: 5.1rem;
+}
+h5 {
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+}
+/* for main components */
+.main-component {
+  width: 100%;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* HOME PAGE */
+#Home {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 4rem 10.9rem;
+}
+nav {
+  padding: 0.6rem;
+  padding-right: 3rem;
+  border-radius: 3rem;
+  background-color: white;
+  height: 5.8rem;
+  display: flex;
+  width: fit-content;
+  margin: auto;
+}
+nav a {
+  color: black;
+  padding: 1.3rem 3.8rem;
+  font-size: 1.4rem;
+}
+.selected {
+  background-color: black;
+  color: white;
+  border-radius: 3rem;
+}
+
+/* header */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 8.2rem;
+}
+
+.emoji {
+  font-size: 2.4rem;
+}
+
+/* LHS */
+.rounded {
+  width: 41.1rem;
+  height: 41.1rem;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #99c2ff 0%, #0066ff 100%);
+}
+.HomeLHS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.HomeLHS .img {
+    margin-top: -31.5rem;
+}
+
+
+/* ABOUT */
+#About {
+  padding: 12rem 0;
+  overflow: hidden;
+}
+
+.about-component {
+  min-height: 15.3rem;
+  margin-bottom: 8rem;
+  margin-left: 21rem;
+  max-width: 92rem;
+}
+
+.circle {
+  width: 9.8rem;
+  height: 9.8rem;
+  background: #032343;
+  border-radius: 50%;
+  float: right;
+  margin-top: -13rem;
+  margin-right: -5rem;
+}
+
+
+/* FEATURES */
+#Features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 2.6rem;
+  font-weight: 500;
+}
+.features-head h1 {
+  margin: 1rem 38rem;
+}
+.features-head p {
+  margin: 0 22rem;
+  font-size: 1.4rem;
+}
+.features-head span {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.features {
+  display: grid;
+  column-gap: 1.2em;
+  row-gap: 4.6rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 4.8rem 10.5rem;
+}
+
+/* component */
+.feature-component {
+  background-color: #1e1f21;
+  padding: 5rem 2rem 2rem 3rem;
+  text-align: left;
+}
+
+.feature-component p {
+  margin: 0.6rem 0;
+  color: #6d6d6d;
+  font-size: 1.4rem;
+}
+.feature-component h5 {
+  margin: 2.2rem 0;
+}
