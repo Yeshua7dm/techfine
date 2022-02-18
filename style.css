@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap");
-
+html {
+  scroll-behavior: smooth;
+}
 :root {
   font-size: 10px;
 }
@@ -21,6 +23,7 @@ body {
   margin: auto;
 }
 
+/* buttons */
 .btn {
   background: #26262b;
   text-align: center;
@@ -33,12 +36,19 @@ body {
   border: none;
   color: white;
 }
+
 .btn-emoji {
   font-weight: 500;
   border-radius: 3rem;
   display: flex;
   column-gap: 1.3rem;
 }
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: .6rem .5rem 1.2rem rgba(255, 255, 255, 0.4);
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -47,7 +57,8 @@ body {
 h1,
 h2,
 h3,
-h5 {
+h5,
+h6 {
   font-weight: 700;
   font-style: normal;
 }
@@ -68,10 +79,14 @@ h5 {
   font-size: 1.8rem;
   line-height: 2.3rem;
 }
+h6 {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
 /* for main components */
 .main-component {
   width: 100%;
-  height: 100vh;
+  max-height: 100vh;
 }
 
 a {
@@ -83,7 +98,6 @@ a {
 #Home {
   font-size: 1.4rem;
   font-weight: 500;
-  padding: 4rem 10.9rem;
 }
 nav {
   padding: 0.6rem;
@@ -94,6 +108,8 @@ nav {
   display: flex;
   width: fit-content;
   margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 nav a {
   color: black;
@@ -113,10 +129,38 @@ header {
   justify-content: space-between;
 }
 
-.home-main {
+/* generic */
+.mr-9 {
+  margin-right: 0.9rem;
+  border: 1px solid #6d6d6d;
+}
+.mr-60 {
+  margin-right: 6rem;
+}
+.underline {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: end;
+  padding-right: 10rem;
+  margin-top: -3rem;
+}
+.faded {
+  color: #6d6d6d;
+}
+
+.home-description {
+  margin: 3.2rem 0;
+}
+
+.grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.home-main {
   padding-top: 8.2rem;
+  padding: 4rem 10.9rem;
 }
 
 .emoji {
@@ -130,16 +174,25 @@ header {
   border-radius: 50%;
   background: linear-gradient(180deg, #99c2ff 0%, #0066ff 100%);
 }
+
+.blue-vector {
+  margin-left: -50rem;
+  margin-right: -6rem;
+  margin-top: 8rem;
+  margin-bottom: -18rem;
+}
+.HomeRHS h1 {
+  margin: 2rem 0;
+}
 .HomeLHS {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .HomeLHS .img {
-    margin-top: -31.5rem;
+  margin-top: -31.5rem;
 }
-
 
 /* ABOUT */
 #About {
@@ -163,7 +216,6 @@ header {
   margin-top: -13rem;
   margin-right: -5rem;
 }
-
 
 /* FEATURES */
 #Features {
@@ -208,4 +260,66 @@ header {
 }
 .feature-component h5 {
   margin: 2.2rem 0;
+}
+
+/* Connect */
+#Connect {
+  padding: 9rem 11rem;
+  font-size: 1.4rem;
+}
+#Connect main {
+  padding: 5rem;
+  width: 100%;
+  height: 100%;
+  background: #1e1f21;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Connect h1 {
+  margin-top: 0.2rem;
+}
+.headlines {
+  margin: 0 auto 12rem auto;
+  width: 67%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.headline {
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid #6d6d6d;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.active {
+  border-bottom: 1px solid #5e55ff;
+}
+
+.connection-info {
+  padding-left: 10.8rem;
+}
+
+.connection-info p {
+  color: #6d6d6d;
+  width: 34rem;
+  margin: 1.1rem 0;
+}
+
+#Connect .grid {
+  margin: 6rem 0;
+  column-gap: 7rem;
+}
+#Connect button {
+  margin: 1.1rem 0;
+}
+.laptop {
+  margin: -3rem;
+}
+
+
+/* DOWNLOAD PAGE */
+#Download {
+    padding-top: 3.5rem;
 }

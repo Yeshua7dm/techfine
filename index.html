@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechFin</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/empty-logo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -14,7 +15,7 @@
         <section class="main-component" id="Home">
             <header>
                 <span class="logo flex">
-                    <img src="" alt="Logo" />
+                    <img src="images/empty-logo.png" alt="Logo" />
                     <span>TechFin</span>
                 </span>
                 <p class="message">Sign up and get 20% Bonus on Referrals</p>
@@ -23,25 +24,37 @@
                     <button class="btn">get the app</button>
                 </div>
             </header>
-            <main class="home-main">
+            <main class="home-main grid">
                 <section class="HomeRHS">
-                    <div>
-                        <button class="btn">new update</button>
+                    <div class="flex">
+                        <button class="btn mr-9">new update</button>
                         <p>Introducing wallets but for ACH</p>
                     </div>
                     <h1>ACH E-wallet in your pockets 🤑</h1>
-                    <p>Just set it and forget it—no more worrying about getting payments late <br /> We process transactions in 3x108 m/s.
+                    <div class="underline">
+                        <img src="images/underline.svg" alt="underline">
+                    </div>
+                    <p class="home-description">Just set it and forget it—no more worrying about getting payments late
+                        <br /> We process transactions in 3x108 m/s.
                     </p>
-                    
-                    <div>
-                        <button class="btn btn-emoji">
+
+                    <div class="flex">
+                        <button class="btn btn-emoji mr-60">
                             <span class="emoji">😊</span>
                             <span>get our app</span>
                         </button>
-                        <p>See how it works</p>
+                        <p class="faded">See how it works</p>
                     </div>
                 </section>
-                <section class="HomeLHS"></section>
+                <section class="HomeLHS">
+                    <!-- <div class="blue-vector"> -->
+                    <img class="blue-vector" src="images/blue-vector.svg" alt="blue-vector">
+                    <!-- </div> -->
+                    <div class="rounded"></div>
+                    <div class="img">
+                        <img src="images/phone.png" alt="single phone" />
+                    </div>
+                </section>
             </main>
             <nav>
                 <a href="#Features" class="selected">Features</a>
@@ -55,38 +68,39 @@
             <div class="features-head">
                 <h1>Automate all your payments.</h1>
                 <p>
-                    A standard ACH debit through Dwolla will be made available in the Dwolla Network three to four business days
+                    A standard ACH debit through Dwolla will be made available in the Dwolla Network three to four
+                    business days
                     after the transfer is initiated but with TechFin, It arrives <span>instantly.</span>
                 </p>
             </div>
             <main class="features">
                 <article class="feature-component">
-                    <img src="" alt="Multi Platform">
+                    <img src="images/convert-3d-cube.png" alt="Multi Platform">
                     <h5>Multi Platform</h5>
                     <p>Adjust responsive spacing, change font size, hide sections on specific devices.</p>
                 </article>
                 <article class="feature-component">
-                    <img src="" alt="Verified Payment">
+                    <img src="images/tag-right.png" alt="Verified Payment">
                     <h5>Verified Payment</h5>
                     <p>Adjust responsive spacing, change font size, hide sections on specific devices.</p>
                 </article>
                 <article class="feature-component">
-                    <img src="" alt="Secure Identification">
+                    <img src="images/people.png" alt="Secure Identification">
                     <h5>Secure Identification</h5>
                     <p>Adjust responsive spacing, change font size, hide sections on specific devices.</p>
                 </article>
                 <article class="feature-component">
-                    <img src="" alt="Daily Reports">
+                    <img src="images/receipt-item.png" alt="Daily Reports">
                     <h5>Daily Reports</h5>
                     <p>Adjust responsive spacing, change font size, hide sections on specific devices.</p>
                 </article>
                 <article class="feature-component">
-                    <img src="" alt="Secure Cloud Data">
+                    <img src="images/shield-search.png" alt="Secure Cloud Data">
                     <h5>Secure Cloud Data</h5>
                     <p>Adjust responsive spacing, change font size, hide sections on specific devices.</p>
                 </article>
                 <article class="feature-component">
-                    <img src="" alt="Daily Reports">
+                    <img src="images/receipt-item.png" alt="Daily Reports">
                     <h5>Daily Reports</h5>
                     <p>Adjust responsive spacing, change font size, hide sections on specific devices.</p>
                 </article>
@@ -95,19 +109,48 @@
         <!-- about page -->
         <section class="main-component" id="About">
             <article class="about-component">
-                <h3>🏦 Help businesses save time and cut costs. And, for nonprofits and religious organizations, Direct Payment helps manage
-                and increase automatic donations.</h3>
+                <h3>🏦 Help businesses save time and cut costs. And, for nonprofits and religious organizations, Direct
+                    Payment helps manage
+                    and increase automatic donations.</h3>
             </article>
             <article class="about-component">
-                <h3>💶 Stock exchange. Lets investors recoup the initial investment plus capital gains from subsequent rises in stock price.</h3>
+                <h3>💶 Stock exchange. Lets investors recoup the initial investment plus capital gains from subsequent
+                    rises in stock price.</h3>
             </article>
             <article class="about-component">
-                <h3>🔐 Next‑generation security. knows a face when it sees one, and intelligently relights it to capture more natural-
-                looking contours.</h3>
+                <h3>🔐 Next‑generation security. knows a face when it sees one, and intelligently relights it to capture
+                    more natural-
+                    looking contours.</h3>
             </article>
             <div class="circle"></div>
         </section>
-        <section class="main-component" id="Connect"></section>
+
+        <!-- Connect Section -->
+        <section class="main-component" id="Connect">
+            <main>
+                <div class="flex headlines">
+                    <h6 class="headline active">Send Funds</h6>
+                    <h6 class="headline">Receive Funds</h6>
+                </div>
+                <div class="grid">
+                    <section class="connection-info">
+                        <h6>— 890m Transactions Completed</h6>
+                        <h2>Connect your Debit Card.</h2>
+                        <p>
+                            Our ACH Network has been continually advancing since its first release, adding new
+                            capabilities and transaction types, improving processing speeds.
+                        </p>
+                        <button class="btn btn-emoji">
+                            <span class="emoji">🚀</span>
+                            <span>get started</span>
+                        </button>
+                    </section>
+                    <section class="laptop">
+                        <img src="images/laptop.png" alt="laptop">
+                    </section>
+                </div>
+            </main>
+        </section>
         <section class="main-component" id="Download"></section>
         <section class="main-component" id="Footer"></section>
     </main>
