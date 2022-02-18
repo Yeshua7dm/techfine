@@ -14,7 +14,9 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-
+.logo {
+  font-size: 2.4rem;
+}
 .container {
   min-height: 100vh;
   width: 144rem;
@@ -45,8 +47,8 @@ body {
 }
 
 .btn:hover {
-    cursor: pointer;
-    box-shadow: .6rem .5rem 1.2rem rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  box-shadow: 0.6rem 0.5rem 1.2rem rgba(255, 255, 255, 0.4);
 }
 
 .flex {
@@ -87,6 +89,7 @@ h6 {
 .main-component {
   width: 100%;
   max-height: 100vh;
+  font-size: 1.4rem;
 }
 
 a {
@@ -147,6 +150,7 @@ header {
 }
 .faded {
   color: #6d6d6d;
+  max-width: 33.8rem;
 }
 
 .home-description {
@@ -265,7 +269,6 @@ header {
 /* Connect */
 #Connect {
   padding: 9rem 11rem;
-  font-size: 1.4rem;
 }
 #Connect main {
   padding: 5rem;
@@ -297,11 +300,11 @@ header {
   border-bottom: 1px solid #5e55ff;
 }
 
-.connection-info {
+.info {
   padding-left: 10.8rem;
 }
 
-.connection-info p {
+.info p {
   color: #6d6d6d;
   width: 34rem;
   margin: 1.1rem 0;
@@ -311,15 +314,163 @@ header {
   margin: 6rem 0;
   column-gap: 7rem;
 }
-#Connect button {
+#Connect button,
+#Download button {
   margin: 1.1rem 0;
 }
 .laptop {
   margin: -3rem;
 }
 
-
 /* DOWNLOAD PAGE */
 #Download {
-    padding-top: 3.5rem;
+  padding: 3.5rem 11.2rem;
+}
+#Download header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  width: 3.6rem;
+  height: 3.6rem;
+  font-size: 1.8rem;
+  text-align: center;
+  border-radius: 50%;
+  background-color: black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 1.6rem;
+}
+#Download .grid {
+  grid-template-columns: 4fr 3fr;
+  margin-top: 14.2rem;
+  column-gap: 11rem;
+}
+#Download .info {
+  padding-left: 9rem;
+}
+.phones {
+  margin-top: -9rem;
+}
+
+/* ellipses */
+.max {
+  height: 110.6rem;
+  width: 110.6rem;
+  border-radius: 50%;
+  background: rgba(30, 31, 33, 0.5);
+  align-items: center;
+  justify-content: center;
+  margin-top: -49rem;
+  margin-bottom: -59rem;
+  z-index: -1;
+}
+
+.medium {
+  height: 67.8rem;
+  width: 67.8rem;
+  background-color: #1e1f21;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.small {
+  width: 39.6rem;
+  height: 39.6rem;
+  background: rgba(38, 38, 43, 0.5);
+  box-shadow: 0px -9px 8px -1px rgba(21, 21, 21, 0.2);
+  border-radius: 50%;
+  z-index: inherit;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+/* footer */
+
+#Footer {
+  padding: 5rem 10.8rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e1f21;
+  color: white;
+}
+
+.integrations {
+  display: flex;
+  justify-content: space-between;
+  margin: 3.3rem 0;
+}
+.integration {
+  height: 4rem;
+  color: white;
+}
+
+#Footer main {
+  border-top: 1px solid #6d6d6d;
+  border-bottom: 1px solid #6d6d6d;
+  padding: 4.1rem 0;
+  margin: 5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 6rem;
+}
+
+#Footer main p {
+  margin-bottom: 1.4rem;
+}
+.title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #6d6d6d;
+}
+
+#Footer .logo {
+  margin-bottom: 1.4rem;
+}
+
+.social-media {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 8rem;
+}
+
+.form {
+  height: 4.5rem;
+}
+
+.form input {
+  height: 100%;
+  padding: 1.5rem;
+  background-color: #171717;
+  color: #6d6d6d;
+  border: none;
+}
+
+.form button {
+  height: 100%;
+  background-color: #26262b;
+  text-transform: uppercase;
+  padding: 1.5rem;
+  border: none;
+  color: #6d6d6d;
+}
+
+#Footer footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-text {
+  text-align: center;
+  width: 100%;
+  color: #6d6d6d;
 }
