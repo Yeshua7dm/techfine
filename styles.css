@@ -19,6 +19,10 @@ body {
   padding: 1.2rem;
   font-size: 1.2rem;
 }
+.grid {
+  grid-template-columns: 1fr;
+  row-gap: 1.2rem;
+}
 header {
   display: grid;
   grid-template-columns: 1fr 8rem 1fr;
@@ -103,10 +107,11 @@ a {
 
 .main-component {
   width: 100%;
-  min-height: 60vh;
+  padding: 2rem 0;
+  /* min-height: 60vh; */
 }
 
-/* nav bar */
+/************************* NAV BAR ****************/
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -144,7 +149,7 @@ nav a {
 
 .left-curve {
   bottom: 2.2rem;
-  left: .8rem;
+  left: 0.8rem;
   height: 3rem;
 }
 
@@ -155,6 +160,194 @@ nav a {
 }
 
 .circle-left {
-    height: 3rem;
-    left: .9rem;
+  height: 3rem;
+  left: 0.9rem;
+}
+
+/******************** FEATURES ********************/
+#Features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 1.6rem;
+  font-weight: 500;
+}
+.features-head h1 {
+  margin: 2rem 1.2rem;
+}
+.features-head p {
+  /* margin: 0 22rem; */
+  font-size: 1.2rem;
+  color: #6d6d6d;
+}
+.features-head span {
+  border-bottom: 0.3rem solid#99C2FF;
+  font-weight: bold;
+  color: #fff;
+}
+
+.features {
+  display: grid;
+  row-gap: 1.2rem;
+  grid-template-columns: 1fr;
+  padding: 2.8rem 1.5rem;
+}
+
+/* component */
+.feature-component {
+  background-color: #1e1f21;
+  padding: 1.5rem;
+  text-align: left;
+  border-radius: 0.5rem;
+}
+
+.feature-component p {
+  margin: 0.6rem 0;
+  color: #6d6d6d;
+  font-size: 1.2rem;
+}
+.feature-component h5 {
+  margin: 1.2rem 0;
+}
+
+/***************** ABOUT *****************/
+#About {
+  overflow: hidden;
+}
+
+.about-component {
+  /* min-height: 15.3rem; */
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  max-width: 32rem;
+}
+
+.circle {
+  width: 3.8rem;
+  height: 3.8rem;
+  background: #032343;
+  border-radius: 50%;
+  float: right;
+  bottom: 4rem;
+  left: 2rem;
+}
+
+/**************** CONNECT *********************/
+
+#Connect main {
+  padding: 1rem;
+  width: 100%;
+  background: #1e1f21;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Connect h1 {
+  margin-top: 0.2rem;
+}
+.headlines {
+  margin: 0 auto 1.2rem auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.headline {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #6d6d6d;
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.active {
+  border-bottom: 1px solid #5e55ff;
+}
+
+.info {
+  margin-left: 1.8rem;
+}
+
+.info p {
+  color: #6d6d6d;
+  margin: 1.1rem 0;
+}
+
+#Connect button,
+#Download button {
+  margin: 1.1rem 0;
+}
+.laptop img {
+  width: 100%;
+}
+
+/***************************DOWNLOAD*****************/
+
+#Download header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+.icon {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 50%;
+  background-color: black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 1rem;
+}
+.faded {
+  color: #6d6d6d;
+  max-width: 30.8rem;
+}
+#Download .info {
+  margin-left: 1rem;
+}
+
+.phones img {
+  /* margin-top: -9rem; */
+  width: 100%;
+  bottom: 2rem;
+}
+
+/* ellipses */
+.max {
+  height: 110.6rem;
+  width: 110.6rem;
+  border-radius: 50%;
+  background: rgba(30, 31, 33, 0.5);
+  align-items: center;
+  justify-content: center;
+  margin-top: -49rem;
+  margin-bottom: -59rem;
+  z-index: -1;
+}
+
+.medium {
+  height: 67.8rem;
+  width: 67.8rem;
+  background-color: #1e1f21;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.small {
+  width: 39.6rem;
+  height: 39.6rem;
+  background: rgba(38, 38, 43, 0.5);
+  box-shadow: 0px -9px 8px -1px rgba(21, 21, 21, 0.2);
+  border-radius: 50%;
+  z-index: inherit;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
 }
