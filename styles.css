@@ -104,7 +104,7 @@ a {
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  padding: .8rem;
+  padding: 0.8rem;
   font-weight: 400;
   border-radius: 2rem;
   border: none;
@@ -126,7 +126,7 @@ a {
   width: 100%;
   align-items: center;
   justify-content: end;
-  padding-right: 10rem;
+  right: 4rem;
   margin-top: -3rem;
 }
 .navigation {
@@ -157,10 +157,10 @@ header {
 
 /*****HOME RHS***/
 .blue-vector {
-    position: relative;
-    right: 19rem;
-    margin-top: 5rem;
-    margin-bottom: -14.5rem;
+  position: relative;
+  right: 19rem;
+  margin-top: 5rem;
+  margin-bottom: -14.5rem;
 }
 .HomeRHS h1 {
   margin: 2rem 0;
@@ -230,7 +230,7 @@ nav a {
 
 .circle-left {
   height: 3rem;
-  right: .9rem;
+  right: 0.9rem;
   /* display: none; */
 }
 
@@ -523,4 +523,316 @@ nav a {
   text-align: center;
   width: 100%;
   color: #6d6d6d;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 100rem;
+    margin: auto;
+    font-size: 1.4rem;
+  }
+.logo img {
+  width: 2.4rem;
+}
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  h1 {
+    font-size: 7.2rem;
+    line-height: 9.2rem;
+  }
+  h2 {
+    font-size: 5.5rem;
+    line-height: 7rem;
+  }
+  h3 {
+    font-size: 4rem;
+    line-height: 5.1rem;
+  }
+  h5 {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+  h6 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  /**************BUTTON***********/
+  .btn {
+    padding: 1rem;
+    column-gap: 1.3rem;
+    font-size: 1.4rem;
+  }
+  /********************HOME***********/
+  .home-main {
+    padding-top: 8.2rem;
+    padding: 4rem 10.9rem;
+  }
+  .home-description {
+    margin: 3.2rem 0;
+  }
+  .underline {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    padding-right: 10rem;
+    margin-top: -3rem;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 2.7rem;
+  }
+  .message {
+    cursor: pointer;
+    text-align: center;
+    margin-top: 0.2rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 2.4rem;
+  }
+  /*****HOME RHS***/
+  .blue-vector {
+    position: relative;
+    right: 21rem;
+    margin-top: 8rem;
+    margin-bottom: -14.5rem;
+  }
+  /*****HOME LHS***/
+  .rounded {
+    width: 41.1rem;
+    height: 41.1rem;
+  }
+
+  /************************* NAV BAR ****************/
+  .nav-container {
+    justify-content: space-between;
+    margin-top: 7rem;
+  }
+  .relative {
+    position: relative;
+  }
+  nav {
+    padding: 0.6rem;
+    padding-right: 3rem;
+    border-radius: 3rem;
+    background-color: white;
+    height: 5.8rem;
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  nav a {
+    padding: 1.3rem 3.8rem;
+    font-size: 1.4rem;
+  }
+  .selected {
+    background-color: black;
+    color: white;
+    border-radius: 3rem;
+  }
+  /* free vectors here */
+  .whirl {
+    bottom: 5rem;
+  }
+
+  .left-curve {
+    bottom: 5rem;
+    left: 16rem;
+  }
+
+  .right-curve {
+    right: 17rem;
+    bottom: 4rem;
+  }
+
+  .circle-left {
+    height: 3rem;
+    right: 0.9rem;
+    /* display: none; */
+  }
+
+  /******************** FEATURES ********************/
+  #Features {
+    padding-top: 2.6rem;
+  }
+  .features-head h1 {
+    margin: 1rem 0;
+    max-width: 62rem;
+    margin: auto;
+  }
+  .features-head p {
+    margin: auto;
+    font-size: 1.4rem;
+    color: #6d6d6d;
+    max-width: 94rem;
+  }
+
+  .features {
+    column-gap: 1.2em;
+    row-gap: 4.6rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 4.8rem 0;
+  }
+
+  /* component */
+  .feature-component {
+    padding: 5rem 2rem 2rem 3rem;
+    border-radius: 0;
+  }
+
+  .feature-component p {
+    font-size: 1.4rem;
+  }
+  .feature-component h5 {
+    margin: 2.2rem 0;
+  }
+
+  /***************** ABOUT *****************/
+  #About {
+    overflow: hidden;
+    padding: 8rem 0;
+  }
+
+  .about-component {
+    min-height: 15.3rem;
+    margin-bottom: 8rem;
+    margin-left: 8rem;
+    max-width: 92rem;
+  }
+
+  .circle {
+    width: 9.8rem;
+    height: 9.8rem;
+    float: right;
+    bottom: 12rem;
+    left: 4rem;
+  }
+
+  /**************** CONNECT *********************/
+
+  #Connect main {
+    padding: 5rem;
+    height: 72rem;
+  }
+  #Connect h1 {
+    margin-top: 0.2rem;
+  }
+  .headlines {
+    margin: 0 auto 12rem auto;
+    width: 67%;
+  }
+
+  .headline {
+    padding-bottom: 2.4rem;
+    font-size: 1.6rem;
+  }
+  .active {
+    border-bottom: 1px solid #5e55ff;
+  }
+
+  .info {
+    margin-left: 5.8rem;
+  }
+
+  .info p {
+    width: 34rem;
+  }
+  .laptop img {
+    width: 100%;
+  }
+
+  /***************************DOWNLOAD*****************/
+  #Download {
+    padding: 3.5rem 0;
+  }
+  #Download header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.2rem;
+  }
+  .icon {
+    width: 3.6rem;
+    height: 3.6rem;
+    font-size: 1.8rem;
+    margin-right: 1rem;
+  }
+  #Download .grid {
+    grid-template-columns: 5fr 3fr;
+    margin-top: 14.2rem;
+    column-gap: 2rem;
+  }
+
+  .phones img {
+    /* margin-top: -9rem; */
+    width: 100%;
+    bottom: 2rem;
+  }
+
+  /* ellipses */
+  .max {
+    height: calc(100vw - 8rem);
+    width: calc(100vw - 8rem);
+    position: relative;
+    margin-top: -35rem;
+    margin-bottom: -63rem;
+  }
+
+  /*************************FOOTER*************/
+  #Footer {
+    padding: 5rem 5rem;
+  }
+
+  .integrations {
+    justify-content: space-between;
+    margin: 3.3rem 0;
+  }
+  .integration {
+    height: 2rem;
+    color: white;
+  }
+
+  #Footer main {
+    padding: 4.1rem 0;
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "lorem comp prod help follow";
+    column-gap: 2rem;
+  }
+
+  #Footer main p {
+    margin-bottom: 1.4rem;
+  }
+
+  #Footer .logo {
+    margin-bottom: 1.4rem;
+  }
+
+  .social-media {
+    margin-bottom: 8rem;
+  }
+
+  .form {
+    height: 4.5rem;
+  }
+
+  .form button {
+    padding: 1.5rem;
+  }
 }
