@@ -3,11 +3,8 @@
     font-size: 2.4rem;
   }
   .container {
-    min-height: 100vh;
     width: 144rem;
-    color: #fff;
-    /* padding: 3rem; */
-    margin: auto;
+    max-width: 144rem;
   }
 
   /* buttons */
@@ -24,13 +21,6 @@
     color: white;
   }
 
-  .btn-emoji {
-    font-weight: 500;
-    border-radius: 3rem;
-    display: flex;
-    column-gap: 1.3rem;
-  }
-
   .btn:hover {
     cursor: pointer;
     box-shadow: 0.6rem 0.5rem 1.2rem rgba(255, 255, 255, 0.4);
@@ -40,46 +30,11 @@
     display: flex;
     align-items: center;
   }
-
-  h1,
-  h2,
-  h3,
-  h5,
-  h6 {
-    font-weight: 700;
-    font-style: normal;
-  }
-
-  h1 {
-    font-size: 7.2rem;
-    line-height: 9.2rem;
-  }
-  h2 {
-    font-size: 5.5rem;
-    line-height: 7rem;
-  }
-  h3 {
-    font-size: 4rem;
-    line-height: 5.1rem;
-  }
-  h5 {
-    font-size: 1.8rem;
-    line-height: 2.3rem;
-  }
-  h6 {
-    font-size: 1.6rem;
-    line-height: 2rem;
-  }
-  /* for main components */
+/*for main components */
   .main-component {
     width: 100%;
     max-height: 100vh;
     font-size: 1.4rem;
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
   }
 
   /* HOME PAGE */
@@ -99,9 +54,7 @@
     margin-top: 7rem;
     align-items: center;
   }
-  .relative {
-    position: relative;
-  }
+
   /* free vectors here */
   .whirl {
     bottom: 5rem;
@@ -125,7 +78,7 @@
     height: 5.8rem;
     display: flex;
     width: fit-content;
-    /* margin: auto; */
+    margin: auto;
     /* margin-top: -5rem; */
     margin-bottom: 2rem;
   }
