@@ -104,12 +104,13 @@ a {
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  padding: 1rem;
+  padding: .8rem;
   font-weight: 400;
   border-radius: 2rem;
   border: none;
   color: white;
   column-gap: 0.8rem;
+  font-size: 1.2rem;
 }
 
 /********************HOME***********/
@@ -154,7 +155,6 @@ header {
 
 .HomeLHS .img {
   margin-top: -31.5rem;
-
 }
 .rounded {
   width: 33rem;
@@ -164,13 +164,11 @@ header {
 }
 
 /************************* NAV BAR ****************/
-
 .nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 3rem;
   align-items: center;
-  max-width: 100vw;
 }
 .relative {
   position: relative;
@@ -179,9 +177,7 @@ nav {
   padding: 0.2rem;
   border-radius: 3rem;
   background-color: white;
-  /* height: 5.8rem; */
   display: flex;
-  width: fit-content;
   margin-bottom: 1rem;
 }
 nav a {
@@ -198,6 +194,7 @@ nav a {
 .whirl {
   top: 2rem;
   height: 5rem;
+  /* display: none; */
 }
 
 .left-curve {
@@ -214,7 +211,8 @@ nav a {
 
 .circle-left {
   height: 3rem;
-  left: 0.9rem;
+  right: 1.5rem;
+  /* display: none; */
 }
 
 /******************** FEATURES ********************/
