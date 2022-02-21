@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
   }
-/*for main components */
+  /*for main components */
   .main-component {
     width: 100%;
     max-height: 100vh;
@@ -329,49 +329,17 @@
 
   /* ellipses */
   .max {
-    height: 110.6rem;
-    width: 110.6rem;
+    height: calc(144rem - 3rem);
+    width: calc(144rem - 3rem);
     border-radius: 50%;
-    background: rgba(30, 31, 33, 0.5);
-    align-items: center;
-    justify-content: center;
     margin-top: -49rem;
     margin-bottom: -59rem;
-    z-index: -1;
-  }
-
-  .medium {
-    height: 67.8rem;
-    width: 67.8rem;
-    background-color: #1e1f21;
-    border-radius: 50%;
-    z-index: -1;
-  }
-
-  .small {
-    width: 39.6rem;
-    height: 39.6rem;
-    background: rgba(38, 38, 43, 0.5);
-    box-shadow: 0px -9px 8px -1px rgba(21, 21, 21, 0.2);
-    border-radius: 50%;
-    z-index: inherit;
-  }
-
-  .center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    vertical-align: middle;
   }
 
   /* footer */
 
   #Footer {
     padding: 5rem 10.8rem;
-    display: flex;
-    flex-direction: column;
-    background-color: #1e1f21;
-    color: white;
   }
 
   .integrations {
@@ -385,22 +353,14 @@
   }
 
   #Footer main {
-    border-top: 1px solid #6d6d6d;
-    border-bottom: 1px solid #6d6d6d;
     padding: 4.1rem 0;
     margin: 5rem 0;
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 6rem;
   }
 
   #Footer main p {
     margin-bottom: 1.4rem;
-  }
-  .title {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: #6d6d6d;
   }
 
   #Footer .logo {
@@ -433,17 +393,6 @@
     text-transform: uppercase;
     padding: 1.5rem;
     border: none;
-    color: #6d6d6d;
-  }
-
-  #Footer footer {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .small-text {
-    text-align: center;
-    width: 100%;
     color: #6d6d6d;
   }
 }
