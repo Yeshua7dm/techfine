@@ -126,7 +126,7 @@ a {
   width: 100%;
   align-items: center;
   justify-content: end;
-  right: 4rem;
+  padding-right: 18rem;
   margin-top: -3rem;
 }
 .navigation {
@@ -525,7 +525,7 @@ nav a {
   color: #6d6d6d;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 100rem;
     margin: auto;
