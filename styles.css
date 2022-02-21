@@ -21,11 +21,11 @@ body {
 }
 
 .mr-9 {
-  margin-right: 0.9rem;
+  margin-right: 0.5rem;
   border: 1px solid #6d6d6d;
 }
 .mr-60 {
-  margin-right: 6rem;
+  margin-right: 2rem;
 }
 
 .grid {
@@ -118,6 +118,17 @@ a {
   padding-top: 1.2rem;
   padding: 2rem 1rem;
 }
+.home-description {
+  margin: 1.2rem 0;
+}
+.underline {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: end;
+  padding-right: 10rem;
+  margin-top: -3rem;
+}
 .navigation {
   grid-area: login;
   display: flex;
@@ -130,6 +141,8 @@ a {
   cursor: pointer;
   text-align: center;
   margin-top: 0.2rem;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 header {
@@ -143,6 +156,12 @@ header {
 }
 
 /*****HOME RHS***/
+.blue-vector {
+    position: relative;
+    right: 19rem;
+    margin-top: 5rem;
+    margin-bottom: -14.5rem;
+}
 .HomeRHS h1 {
   margin: 2rem 0;
 }
@@ -157,8 +176,8 @@ header {
   margin-top: -31.5rem;
 }
 .rounded {
-  width: 33rem;
-  height: 33rem;
+  width: calc(100vw - 4rem);
+  height: calc(100vw - 4rem);
   border-radius: 50%;
   background: linear-gradient(180deg, #99c2ff 0%, #0066ff 100%);
 }
@@ -211,7 +230,7 @@ nav a {
 
 .circle-left {
   height: 3rem;
-  right: 1.5rem;
+  right: .9rem;
   /* display: none; */
 }
 
@@ -363,11 +382,9 @@ nav a {
 }
 
 /* ellipses */
-/* max-container {
-    he
-} */
 .max {
-  height: 100vw;
+  height: calc(100vw - 2rem);
+  width: calc(100vw - 2rem);
   border-radius: 50%;
   position: relative;
   background: rgba(30, 31, 33, 0.5);
