@@ -270,6 +270,7 @@ nav a {
   padding: 1.5rem;
   text-align: left;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .feature-component p {
@@ -472,11 +473,13 @@ nav a {
 
 #Footer main p {
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 .title {
   font-size: 1.2rem;
   text-transform: uppercase;
   color: #6d6d6d;
+  cursor: none;
 }
 
 #Footer .logo {
@@ -532,9 +535,9 @@ nav a {
     margin: auto;
     font-size: 1.4rem;
   }
-.logo img {
-  width: 2.4rem;
-}
+  .logo img {
+    width: 2.4rem;
+  }
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -835,5 +838,211 @@ nav a {
 
   .form button {
     padding: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .logo {
+    font-size: 2.4rem;
+  }
+  .container {
+    width: 144rem;
+    max-width: 144rem;
+  }
+
+  /* buttons */
+  .btn {
+    padding: 1rem 2rem;
+    font-weight: 400;
+    border-radius: 2rem;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+    box-shadow: 0.6rem 0.5rem 1.2rem rgba(255, 255, 255, 0.4);
+  }
+
+  /*for main components */
+  .main-component {
+    width: 100%;
+    max-height: 100vh;
+    font-size: 1.4rem;
+  }
+
+  /* HOME PAGE */
+  #Home {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  .nav-container {
+    margin: 7rem 0;
+  }
+
+  nav {
+    margin-bottom: 3rem;
+    position: relative;
+    bottom: 1rem;
+  }
+
+  /* free vectors here */
+  .whirl {
+    bottom: 0;
+    top: -1rem;
+    height: 100%;
+  }
+
+  .left-curve {
+    bottom: 5rem;
+    left: 32rem;
+    height: 100%;
+  }
+
+  .right-curve {
+    right: 33rem;
+    bottom: 4rem;
+    height: 100%;
+  }
+
+  .circle-left {
+    height: 100%;
+  }
+  /* end of free vectors */
+
+  /* header */
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* generic */
+  .mr-9 {
+    margin-right: 0.9rem;
+    border: 1px solid #6d6d6d;
+  }
+  .mr-60 {
+    margin-right: 6rem;
+  }
+  .underline {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    padding-right: 10rem;
+    margin-top: -3rem;
+  }
+  .faded {
+    color: #6d6d6d;
+    max-width: 33.8rem;
+  }
+
+  .home-main {
+    padding-top: 8.2rem;
+    padding: 4rem 10.9rem;
+  }
+
+  .emoji {
+    font-size: 2.4rem;
+  }
+
+  /* FREE VECTORS */
+
+  .blue-vector {
+    margin-top: 8rem;
+    margin-bottom: -18rem;
+  }
+
+  /* ABOUT */
+  #About {
+    padding: 12rem 0;
+  }
+
+  .about-component {
+    margin-left: 21rem;
+  }
+
+  /* FEATURES */
+  .features-head h1 {
+    margin: 1rem 38rem;
+  }
+
+  /* Connect */
+  #Connect {
+    padding: 9.8rem 11rem;
+  }
+
+  #Connect h1 {
+    margin-top: 0.2rem;
+  }
+
+  .info {
+    padding-left: 3.8rem;
+  }
+
+  .info p {
+    width: 34rem;
+  }
+
+  .laptop {
+    margin: -3rem;
+    width: 95%;
+  }
+
+  /* DOWNLOAD PAGE */
+  #Download {
+    padding: 3.5rem 11.2rem;
+  }
+  #Download header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon {
+    margin-right: 1.6rem;
+  }
+  #Download .grid {
+    grid-template-columns: 4fr 3fr;
+    margin: 7rem 3rem;
+    column-gap: 3rem;
+  }
+  #Download .info {
+    padding-left: 3.8rem;
+    margin: 10rem 0;
+  }
+  .phones {
+    position: relative;
+    left: 4rem;
+  }
+
+  /* ellipses */
+  .max {
+    height: 110.6rem;
+    width: 110.6rem;
+    border-radius: 50%;
+    margin-top: -50rem;
+    margin-bottom: -70rem;
+  }
+
+  /********FOOTER ***********/
+
+  #Footer {
+    padding: 5rem 10.8rem;
+  }
+
+  .integrations {
+    display: flex;
+    justify-content: space-between;
+    margin: 3.3rem 0;
+  }
+  .integration {
+    height: 4rem;
+  }
+
+  #Footer main {
+    column-gap: 0.6rem;
+  }
+  .form {
+    height: 4.5rem;
   }
 }
